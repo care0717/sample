@@ -50,7 +50,8 @@ commitRes = []
 
 commits.each{|commit|
   if(commit[:author] == nil) then
-    puts(commit[:commit][:author][:name])
+    puts(commit.attrs[:commit][:author][:name])
+    puts(commit[:sha])
   end
 
   #if betweenStartEnd(startTime, commit.attrs[:commit][:committer][:date], endTime) then
