@@ -1,7 +1,7 @@
 require 'slack-ruby-bot'
 
 Slack.configure do |config|
-  config.token = "xoxp-254480207664-254613636241-256038062390-52c7da90107b4918fd0e7729314bd147"#ENV['SLACK_API_TOKEN']
+  config.token =
 end
 
 client = Slack::RealTime::Client.new
