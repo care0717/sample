@@ -1,5 +1,5 @@
 require 'slack'
-Slack.configure {|config| config.token = "xoxp-254480207664-254613636241-256038062390-52c7da90107b4918fd0e7729314bd147" }
+Slack.configure {|config| config.token = ENV[] }
 client = Slack.realtime
 
 client.on :hello do
